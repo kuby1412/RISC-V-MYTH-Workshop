@@ -7,7 +7,7 @@ This repository contains source code and all necessary information regarding the
 
 RISC-V is an open standard instruction set architecture based on established reduced instruction set computer(RISC) principles. It was first started by Prof. Krste Asanović and graduate students Yunsup Lee and Andrew Waterman in May 2010 as part of the Parallel Computing Laboratory, at UC Berkeley. Unlike most other ISA designs, the RISC-V ISA is provided under open source licenses that do not require fees to use, which provides it a huge edge over other commercially available ISAs. It is a simple, stable, small standard base ISA with extensible ISA support, that has been redefining the flexibility, scalability, extensibility, and modularity of chip designs. This has made it easier and flexible for anyone to build a processor on his own at almost zero cost. 
 
-![SiFive](/RISC-V-MYTH-Workshop/blob/master/SiFive%20Core%20CPU.jpg)
+![SiFive](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/SiFive%20Core%20CPU.jpg)
 
 ## What’s Different About RISC-V?
 
