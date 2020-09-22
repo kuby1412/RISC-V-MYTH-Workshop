@@ -49,11 +49,53 @@ Under the risc-v toolchain,
     
     Once done with installation add the PATH to .bashrc file for future use.
     
- Test Case for the above commands [(1 to 9)](/RISC-V-MYTH-Workshop/blob/master/Day%401/sum1to9.c)
+ Test Case for the above commands [(1 to 9)](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%401/sum1to9.c)
 
   * Below image shows the disassembled file `sum1ton.o` with `main` function highlighted.
 
     ![disassemble](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%401/Part3.png)
+    
+# Introduction to ABI
+
+An Application Binary Interface is a set of rules enforced by the operating system on a specific architecture. So, Linker converts relocatable machine code to absolute machine code via ABI interface specific to the architecture of machine.
+
+So, it is system call interface used by the application program to access the registers specific to architecture. Overhere the architecture is RISC-V, so to access 32 registers of RISC-V below is the table which shows the calling convention (ABI name) given to registers for the application programmer to use.
+[(Image source)](https://riscv.org/wp-content/uploads/2015/01/riscv-calling.pdf)
+
+![calling_convention](Images/calling_convetion.png)
+
+# Digital Logic with TL-Verilog and Makerchip
+
+[Makerchip](https://makerchip.com/) is a free online environment for developing high-quality integrated circuits. You can code, compile, simulate, and debug Verilog designs, all from your browser. Your code, block diagrams, and waveforms are tightly integrated.
+
+All the examples shown below are done on Makerchip IDE using TL-verilog. Also there are other tutorials present on IDE which can be found [here](https://makerchip.com/sandbox/) under Tutorials section.
+
+## [Combinational logic](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/combinational_calc.tlv)
+
+Starting with basic example in combinational logic is an inverter. To write the logic of inverter using TL-verilog is `$out = ! $in;`. There is no need to declare `$out` and `$in` unlike Verilog. There is also no need to assign `$in`. Random stimulus is provided, and a warning is produced. 
+
+Below is snapshot of Combinational Calculator.
+
+![Combinational-Calculator](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/combinational_calc.PNG)
+
+## [Pipelined logic](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/lab_pipeline.tlv)
+
+Timing abstract powerful feature of TL-Verilog which converts a code into pipeline stages easily. Whole code under `|pipe` scope with stages defined as `@?`
+
+Below is snapshot of 2-cycle calculator which clears the output alternatively and output of given inputs are observed at the next cycle.
+
+![Cycle-Calculator](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/lab_pipeline.PNG)
+
+## [Validity](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/calculator_solutions.tlv)
+
+Validity is TL-verilog means signal indicates validity of transaction and described as "when" scope else it will work as don't care. Denoted as `?$valid`. Validity provides easier debug, cleaner design, better error checking, automated clock gating.
+
+Below is snapshot of 2-cycle calculator with validity. 
+
+![Cycle-Calculator-Validity](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/calculator_diagram.PNG)
+![Cycle-Calculator-Validity](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/calculator_diagram.PNG)
+
+
 
 
 ## RISC-V Block Diagram 
