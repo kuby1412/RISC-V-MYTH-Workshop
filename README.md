@@ -168,8 +168,7 @@ Pipelining the CPU with branches still having 3 cycle delay rest all instruction
        Instructions present in this stage
        
     @<pipe_stage>
-       Instructions present in this stage
-       
+       Instructions present in this stage       
 ```
 Test case:
 ```
@@ -203,7 +202,7 @@ Below is final Snapshots of Complete Pipelined RISC-V CPU.
 
 ![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_tlv_v8.png)
 
-![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_v1.png)
+![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_v3.png)
 
 ![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_v4.png)
 
@@ -215,10 +214,8 @@ Below is final Snapshots of Complete Pipelined RISC-V CPU.
 
 ![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_waveform_3.png)
 
-
-## RISC-V Block Diagram 
-
-![Block Diagram](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Documentation/Block%20Diagram.PNG)
-
-
-
+# Acknowledgements
+- [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
+- [Steve Hoover](https://github.com/stevehoover), Founder, Redwood EDA
+- [Shivam Potdar](https://github.com/shivampotdar), GSoC 2020 @fossi-foundation
+- [Vineet Jain](https://github.com/vineetjain07), GSoC 2020 @fossi-foundation
