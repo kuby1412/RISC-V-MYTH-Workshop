@@ -92,7 +92,8 @@ Validity is TL-verilog means signal indicates validity of transaction and descri
 
 Below is snapshot of 2-cycle calculator with validity. 
 
-![Cycle-Calculator-Validity](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/calculator_diagram.PNG)
+![Cycle-Calculator-Validity](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/calculator.PNG)
+
 ![Cycle-Calculator-Validity](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/calculator_diagram.PNG)
 
 
