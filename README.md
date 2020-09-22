@@ -2,6 +2,23 @@
 
 This repository contains all the information needed to build your RISC-V pipelined core, which has support of base interger RV32I instruction format using TL-Verilog on Makerchip IDE platform.
 
+# Table of Contents
+- [Introduction to RISC-V ISA](#introduction-to-risc-v-isa)
+- [Overview of GNU compiler toolchain](#overview-of-gnu-compiler-toolchain)
+- [Introduction to ABI](#introduction-to-abi)
+- [Digital Logic with TL-Verilog and Makerchip](#digital-logic-with-tl-verilog-and-makerchip)
+  - [Combinational logic](#combinational-logic)
+  - [Pipelined logic](#pipelined-logic)
+  - [Validity](#validity)
+- [Basic RISC-V CPU micro-architecture](#basic-risc-v-cpu-micro-architecture)
+  - [Fetch](#fetch)
+  - [Decode](#decode)
+  - [Register File Read and Write](#register-file-read-and-write)
+  - [Control Logic](#control-logic)
+- [Pipelined RISC-V CPU](#pipelined-risc-v-cpu)
+  - [Completing the RISC-V CPU](#completing-the-risc-v-cpu)
+- [Acknowledgements](#acknowledgements)
+
 # Introduction to RISC-V ISA
 
 A RISC-V ISA is defined as a base integer ISA, which must be present in any implementation, plus optional extensions to the base ISA. Each base integer instruction set is characterized by
