@@ -1,6 +1,6 @@
-# RISC-V based CPU Design using TL-Verilog aka RV32I Core
+# RISC-V CPU Design with TL-Verilog aka RV32I Core
 
-*This repository contains all necessary information regarding the RISC-V based CPU Core Design MYTH (Microprocessor for You in Thirty Hours) Workshop, offered by for VLSI System Design (VSD) and Redwood EDA*
+*This repository contains all necessary information regarding the RISC-V based CPU Core Design MYTH (Microprocessor for You in Thirty Hours) Workshop, offered by for VLSI System Design (VSD) and Redwood EDA.*
 
   ## RISC-V ISA
 
@@ -10,10 +10,10 @@ RISC-V (known as *risk five*) is an open standard instruction set architecture (
 
 ![SiFive](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Documentation/SiFive-CPU-Feature-768x425.jpg)
 
-## RISC-V International
-The RISC-V Foundation was founded in 2015 to build an open, collaborative community of software and hardware innovators based on the RISC-V ISA. The Foundation, a non-profit corporation controlled by its members, directed the development to drive the initial adoption of the RISC-V ISA. For more information visit the site : www.riscv.org
+## RISC-V Block Diagram 
 
-![RISCV_logo](https://github.com/RISCV-MYTH-WORKSHOP/RISC-V-CPU-Core-using-TL-Verilog/blob/master/Documentation/Snaps/RISCV_logo.jpg)
+![Block Diagram](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Documentation/Block%20Diagram.PNG)
+
 
 
  ## ISA base and extensions
