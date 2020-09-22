@@ -195,17 +195,25 @@ Added test case to check fucntionality of load/store. Stored the summation of 1 
 
 Added Jumps and completed Instruction Decode and ALU for all instruction present in RV32I base integer instruction set.
 
-Below is final Snapshot of Complete Pipelined RISC-V CPU.
+Below is final Snapshots of Complete Pipelined RISC-V CPU.
+
+![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_tlv_v6.png)
+
+![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_tlv_v7.png)
+
+![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_tlv_v8.png)
 
 ![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_v1.png)
-
-![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_v2.png)
-
-![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_v3.png)
 
 ![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_v4.png)
 
 ![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core%20using%20TL-Verilog.png)
+
+![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_waveform_1.png)
+
+![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_waveform_2.png)
+
+![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_waveform_3.png)
 
 
 ## RISC-V Block Diagram 
