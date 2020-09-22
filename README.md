@@ -48,6 +48,12 @@ Under the risc-v toolchain,
       2. [RISC-V ISA SImulator - Spike](https://github.com/kunalg123/riscv_workshop_collaterals)
     
     Once done with installation add the PATH to .bashrc file for future use.
+    
+ Test Case for the above commands [(1 to 9)](/RISC-V-MYTH-Workshop/blob/master/Day%401/sum1to9.c)
+
+  * Below image shows the disassembled file `sum1ton.o` with `main` function highlighted.
+
+    ![disassemble](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%401/Part3.png)
 
 
 ## RISC-V Block Diagram 
