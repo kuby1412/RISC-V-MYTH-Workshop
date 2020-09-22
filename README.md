@@ -2,26 +2,21 @@
 
 This repository contains all necessary information regarding the *RISC-V based CPU Core Design MYTH (Microprocessor for You in Thirty Hours) Workshop*, offered by for *VLSI System Design (VSD) and Redwood EDA*. The RISC-V CPU Core has been designed with *Transaction Level Verilog (TL-Verilog) via Makerchip IDE Platform* 
 
-# RISC-V ISA
+## RISC-V ISA
 
-RISC-V (known as *risk five*) is an open standard instruction set architecture (ISA) based on established reduced instruction set computer(RISC) principles which was first developed by Dr. Krste Asanovic (*Co-inventor of RISCV and Co-founder of SiFive*) and graduate students Yunsup Lee and Andrew Waterman in May 2010 as part of the Parallel Computing Laboratory at UC Berkeley. Unlike most other ISA designs, the RISC-V ISA is provided under open source licenses that do not require fees to use, which provides it a huge edge over other commercially available ISAs. It is a simple, stable, small standard base ISA with extensible ISA support, that has been redefining the flexibility, scalability, extensibility, and modularity of chip designs. This has made it easier and flexible for anyone to build a processor on his own at almost zero cost. 
+RISC-V (known as *risk five*) is an open standard instruction set architecture (ISA) based on established reduced instruction set computer(RISC) principles which was first developed by Dr. Krste Asanovic (*Co-inventor of RISCV and Co-founder of SiFive*) and graduate students Yunsup Lee and Andrew Waterman in May 2010 as part of the Parallel Computing Laboratory at UC Berkeley. Unlike most other ISA designs, the RISC-V ISA is provided under open source licenses that do not require fees to use, which provides it a huge edge over other commercially available ISAs. This has made it easier and flexible for anyone to build a processor on his own at almost zero cost. 
 
 ***A new RISC-V processor core IP introduced by Dr. Krste Asanovic & Dr. Yunsup Lee at Linley Fall Virtual Processor Conference***
 
 ![SiFive](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Documentation/SiFive-CPU-Feature-768x425.jpg)
 
-## What’s Different About RISC-V?
+## RISC-V International
+The RISC-V Foundation was founded in 2015 to build an open, collaborative community of software and hardware innovators based on the RISC-V ISA. The Foundation, a non-profit corporation controlled by its members, directed the development to drive the initial adoption of the RISC-V ISA. For more information visit the site : www.riscv.org
 
-   Comparing to ARM and X86, RISC-V has below advantages:
-
-   - **Free:** RISC-V is open-source, there is no need to pay for the IP.
-   - **Simple:** RISC-V is far smaller than other commercial ISAs.
-   - **Modular:** RISC-V has a small standard base ISA, with multiple standard extensions.
-   - **Stable:** Base and first standard extensions are already frozen. There is no need to worry about major updates.
-   - **Extensibility:** Specific functions can be added based on extensions. There are many more extensions are under development, such as Vector.
+![RISCV_logo](https://github.com/RISCV-MYTH-WORKSHOP/RISC-V-CPU-Core-using-TL-Verilog/blob/master/Documentation/Snaps/RISCV_logo.jpg)
 
 
-## ISA base and extensions
+ ## ISA base and extensions
 
 The RISC-V instruction set has modular characteristics. The instruction set is organized in a modular manner.Each module is represented by an English letter. 
 The instruction set includes the standard part and the extension part. The standard part must be implemented.
@@ -40,10 +35,7 @@ The base integer instructions set, that exclusively operate on integer numbers, 
 
 A CPU core that implements all the above type of instructions is called as **"RV64IMFD"** CPU Core.
 
-## RISC-V International
-The RISC-V Foundation was founded in 2015 to build an open, collaborative community of software and hardware innovators based on the RISC-V ISA. The Foundation, a non-profit corporation controlled by its members, directed the development to drive the initial adoption of the RISC-V ISA. For more information visit the site : www.riscv.org
 
-![RISCV_logo](https://github.com/RISCV-MYTH-WORKSHOP/RISC-V-CPU-Core-using-TL-Verilog/blob/master/Documentation/Snaps/RISCV_logo.jpg)
 
 In this workshop, we were given the overview of the software as well as the hardware aspect of the RISC-V core and ISA. In addition to that, hands on labs were also conducted in order to learn by doing, rather than just reading the theory and specifications, or just watching the videos.
 
