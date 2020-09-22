@@ -1,12 +1,12 @@
 # RISC-V based CPU Design using TL-Verilog aka RV32I Core
 
-This repository contains all necessary information regarding the *RISC-V based CPU Core Design MYTH (Microprocessor for You in Thirty Hours) Workshop*, offered by for *VLSI System Design (VSD) and Redwood EDA*. The RISC-V CPU Core has been designed with *Transaction Level Verilog (TL-Verilog) via Makerchip IDE Platform* 
+*This repository contains all necessary information regarding the RISC-V based CPU Core Design MYTH (Microprocessor for You in Thirty Hours) Workshop, offered by for VLSI System Design (VSD) and Redwood EDA*
 
-## RISC-V ISA
+  ## RISC-V ISA
 
-RISC-V (known as *risk five*) is an open standard instruction set architecture (ISA) based on established reduced instruction set computer(RISC) principles which was first developed by Dr. Krste Asanovic (*Co-inventor of RISCV and Co-founder of SiFive*) and graduate students Yunsup Lee and Andrew Waterman in May 2010 as part of the Parallel Computing Laboratory at UC Berkeley. Unlike most other ISA designs, the RISC-V ISA is provided under open source licenses that do not require fees to use, which provides it a huge edge over other commercially available ISAs. This has made it easier and flexible for anyone to build a processor on his own at almost zero cost. 
+RISC-V (known as *risk five*) is an open standard instruction set architecture (ISA) based on established reduced instruction set computer(RISC) principles which was first developed by Dr. Krste Asanovic (*Co-inventor of RISCV and Co-founder of SiFive*) and graduate students Yunsup Lee and Andrew Waterman in May 2010 as part of the Parallel Computing Laboratory at UC Berkeley. 
 
-***A new RISC-V processor core IP introduced by Dr. Krste Asanovic & Dr. Yunsup Lee at Linley Fall Virtual Processor Conference***
+   ***A new RISC-V processor core IP introduced by Dr. Krste Asanovic & Dr. Yunsup Lee at Linley Fall Virtual Processor Conference***
 
 ![SiFive](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Documentation/SiFive-CPU-Feature-768x425.jpg)
 
