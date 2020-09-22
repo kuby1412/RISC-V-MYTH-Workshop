@@ -6,7 +6,7 @@ This repository contains all necessary information regarding the RISC-V based CP
 
 RISC-V (known as *risk five*) is an open standard instruction set architecture (ISA) based on established reduced instruction set computer(RISC) principles which was first developed by Dr. Krste Asanovic, co-inventor of RISC-V & co-founder of SiFive and graduate students Yunsup Lee and Andrew Waterman in May 2010 as part of the Parallel Computing Laboratory at UC Berkeley. 
 
-   ***## A new RISC-V processor core IP introduced by Dr. Krste Asanovic & Dr. Yunsup Lee at Linley Fall Virtual Processor Conference***
+   ## ***A new RISC-V processor core IP introduced by Dr. Krste Asanovic & Dr. Yunsup Lee at Linley Fall Virtual Processor Conference***
 
 ![SiFive](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Documentation/SiFive-CPU-Feature-768x425.jpg)
 
