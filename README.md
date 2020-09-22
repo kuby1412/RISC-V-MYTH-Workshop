@@ -62,7 +62,13 @@ An Application Binary Interface is a set of rules enforced by the operating syst
 So, it is system call interface used by the application program to access the registers specific to architecture. Overhere the architecture is RISC-V, so to access 32 registers of RISC-V below is the table which shows the calling convention (ABI name) given to registers for the application programmer to use.
 [(Image source)](https://riscv.org/wp-content/uploads/2015/01/riscv-calling.pdf)
 
-![calling_convention](Images/calling_convetion.png)
+![calling_convention](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Documentation/ABI.png)
+
+# RISC-V Block Diagram
+
+![RISC-V](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Documentation/Block%20Diagram.PNG)
+
+![RISC-V](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Documentation/Block%20Diagram%20v2.PNG)
 
 # Digital Logic with TL-Verilog and Makerchip
 
