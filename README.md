@@ -7,9 +7,10 @@ This repository contains all the information needed to build your RISC-V pipelin
 - [Overview of GNU compiler toolchain](#overview-of-gnu-compiler-toolchain)
 - [Introduction to ABI](#introduction-to-abi)
 - [Digital Logic with TL-Verilog and Makerchip](#digital-logic-with-tl-verilog-and-makerchip)
-  - [Combinational logic](#combinational-logic)
-  - [Pipelined logic](#pipelined-logic)
-  - [Validity](#validity)
+  - [Combinational Logic](#combinational-logic)
+  - [Sequential Logic](#sequential-logic)
+  - [Counter and Calculator in Pipeline](#counter-and-calculator-in-pipeline)
+  - [2-Cycle Calculator with Validity](#2-cycle-calculator-with-validity)
 - [Basic RISC-V CPU micro-architecture](#basic-risc-v-cpu-micro-architecture)
   - [Fetch](#fetch)
   - [Decode](#decode)
@@ -131,13 +132,11 @@ Designing the basic processor of 3 stages fetch, decode and execute based on RIS
 * Program Counter (PC): Holds the address of next Instruction
 * Instruction Memory (IM): Holds the set of instructions to be executed
 
-During Fetch Stage, processor fetches the instruction from the IM pointed by address given by PC.
-
-Below is snapshot from Makerchip IDE after performing the Fetch Stage.
+During fetch stage, processor fetches the instruction from the IM pointed by address given by PC. Below is snapshot from Makerchip IDE after performing the fetch stage.
 
 ![Fetch](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/lab_fetch.PNG)
 
-## [Decode](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/lab_instruction_decode.tlv)
+## [Instruction Decode](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/lab_instruction_decode.tlv)
 
 6 types of Instructions:
   * R-type - Register 
@@ -147,15 +146,13 @@ Below is snapshot from Makerchip IDE after performing the Fetch Stage.
   * U-type - Upper Immediate
   * J-type - Jump (Unconditional Jump)
 
-Instruction Format includes Opcode, immediate value, source address, destination address. During Decode Stage, processor decodes the instruction based on instruction format and type of instruction.
-
-Below is snapshot from Makerchip IDE after performing the Decode Stage.
+Instruction Format includes opcode, immediate value, source address and destination address. During decode stage, processor decodes the instruction based on instruction format and type of instruction. Below is snapshot from Makerchip IDE after performing the decode stage.
 
 ![Decode](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/lab_instructions_decode.PNG)
 
-## [Register File Read and Write](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/register_file_read.tlv)
+## [Register File Read and Write](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/register_file_write.tlv)
 
-Here the Register file is 2 read, 1 write means 2 read and 1 write operation can happen simultanously.
+Here the Register file is 2 read, 1 write which means 2 read and 1 write operation can happen simultanously.
 
 Inputs:
   * Read_Enable   - Enable signal to perform read operation
@@ -175,13 +172,19 @@ Below is snapshot from Makerchip IDE after performing the Register File Read fol
 
 ![Register-File-Write](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/register_file_write.PNG)
 
+## [ALU](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/ALU.tlv)
+
+During the execute stage at ALU, both the operands perform the operation based on opcode. Below is snapshot from Makerchip IDE after performing the execute stage.
+
+![ALU](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/ALU.PNG)
+
 ## [Control Logic](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/testbench.tlv)
 
-During Decode Stage, branch target address is calculated and fed into PC mux. Before Execute Stage, once the operands are ready branch condition is checked.
+During decode stage, branch target address is calculated and fed into PC mux. Before execute stage, once the operands are ready branch condition is checked. Below is snapshot from Makerchip IDE after including the control logic for branch instructions and testbench.
 
-Below is snapshot from Makerchip IDE after including the control logic for branch instructions and testbench.
+![Branch](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/branch_v2.PNG)
 
-![Control-logic](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/testbench.PNG)
+![Testbench](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%404/testbench.PNG)
 
 # Pipelined RISC-V CPU
 
@@ -220,7 +223,7 @@ Added test case to check fucntionality of load/store. Stored the summation of 1 
 
 Added Jumps and completed Instruction Decode and ALU for all instruction present in RV32I base integer instruction set.
 
-Below is final Snapshots of Complete Pipelined RISC-V CPU.
+Below is final snapshots of Complete Pipelined RISC-V CPU core.
 
 ![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_tlv_v6.png)
 
