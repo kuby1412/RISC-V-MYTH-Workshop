@@ -93,31 +93,34 @@ So, it is system call interface used by the application program to access the re
 
 All the examples shown below are done on Makerchip IDE using TL-verilog. Also there are other tutorials present on IDE which can be found [here](https://makerchip.com/sandbox/) under Tutorials section.
 
-## [Combinational logic](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/combinational_calc.tlv)
+## [Combinational Logic](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/combinational_calc.tlv)
 
-Starting with basic example in combinational logic is an inverter. To write the logic of inverter using TL-verilog is `$out = ! $in;`. There is no need to declare `$out` and `$in` unlike Verilog. There is also no need to assign `$in`. Random stimulus is provided, and a warning is produced. 
-
-Below is snapshot of Combinational Calculator.
+Starting with basic example in combinational logic is an inverter. To write the logic of inverter using TL-verilog is `$out = ! $in;`. There is no need to declare `$out` and `$in` unlike Verilog. There is also no need to assign `$in`. Random stimulus is provided, and a warning is produced. Below is snapshot of Combinational Calculator.
 
 ![Combinational-Calculator](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/combinational_calc.PNG)
 
-## [Pipelined logic](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/lab_pipeline.tlv)
+## [Sequential Logic](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/sequential_logic.tlv)
+
+Starting with basic example in sequential logic is Fibonacci Series with reset. To write the logic of Series using TL-Verilog is `$num[31:0] = $reset ? 1 : (>>1$num + >>2$num)`. This operator `>>?` is ahead of operator which will provide the value of that signal 1 cycle before and 2 cycle before respectively. Below is snapshot of Sequential Calculator which remembers the last result, and uses it for the next calculation.
+
+![Sequential-Calculator](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/Sequential%20Logic.PNG)
+
+## [Counter and Calculator in Pipeline](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/counter%20_and%20_calculator%20_in%20_pipeline.tlv)
 
 Timing abstract powerful feature of TL-Verilog which converts a code into pipeline stages easily. Whole code under `|pipe` scope with stages defined as `@?`
+Below is snapshot of Counter and Calculator in Pipeline & 2-Cycle Calculator which clears the output alternatively and output of given inputs are observed at the next cycle.
 
-Below is snapshot of 2-cycle calculator which clears the output alternatively and output of given inputs are observed at the next cycle.
+![Counter-and-Calculator-in-Pipeline](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/Counter%20and%20Calculator%20in%20Pipeline.PNG)
 
-![Cycle-Calculator](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/lab_pipeline.PNG)
+![2-Cycle-Calculator](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/2-cycle_calculator.PNG)
 
-## [Validity](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/calculator_solutions.tlv)
+## [2-Cycle Calculator with Validity](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/2-cycle_calculator_with_validity.tlv)
 
-Validity is TL-verilog means signal indicates validity of transaction and described as "when" scope else it will work as don't care. Denoted as `?$valid`. Validity provides easier debug, cleaner design, better error checking, automated clock gating.
+Validity is TL-verilog means signal indicates validity of transaction and described as "when" scope else it will work as don't care. Denoted as `?$valid`. Validity provides easier debug, cleaner design, better error checking, automated clock gating. Below is snapshot of 2-Cycle Calculator with Validity and Calculator with Single-Value Memory.
 
-Below is snapshot of 2-cycle calculator with validity. 
+![2-Cycle-Calculator-with-Validity](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/calculator.PNG)
 
-![Cycle-Calculator-Validity](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/calculator.PNG)
-
-![Cycle-Calculator-Validity](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/calculator_diagram.PNG)
+![Calculator with Single-Value Memory](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%403/calculator_with_single-value_memory.PNG)
 
 # Basic RISC-V CPU micro-architecture
 
