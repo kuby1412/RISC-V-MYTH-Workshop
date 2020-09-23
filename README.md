@@ -13,12 +13,15 @@ This repository contains all the information needed to build your RISC-V pipelin
   - [2-Cycle Calculator with Validity](#2-cycle-calculator-with-validity)
 - [Basic RISC-V CPU micro-architecture](#basic-risc-v-cpu-micro-architecture)
   - [Fetch](#fetch)
-  - [Decode](#decode)
+  - [Instruction Decode](#instruction-decode)
   - [Register File Read and Write](#register-file-read-and-write)
+  - [ALU](#alu)
   - [Control Logic](#control-logic)
 - [Pipelined RISC-V CPU](#pipelined-risc-v-cpu)
   - [Completing the RISC-V CPU](#completing-the-risc-v-cpu)
+- [Conclusion](#conclusion)
 - [Acknowledgements](#acknowledgements)
+
 
 # Introduction to RISC-V ISA
 
@@ -242,6 +245,9 @@ Below is final snapshots of Complete Pipelined RISC-V CPU core.
 ![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_waveform_2.png)
 
 ![Final](https://github.com/kuby1412/RISC-V-MYTH-Workshop/blob/master/Day%405/RISC-V%20pipe-lined%20CPU%20core_waveform_3.png)
+
+# Conclusion
+This project was done as a part of the RISC-V based MYTH (Microprocessor for You in Thirty Hours) workshop conducted by Kunal Ghosh and Steve Hoover. The current project implements almost the entire RV32I base instruction set. We capable of executing all RISC-V instructions in four cycles with easy pipelining using Transaction-Level Verilog. TL-Verilog not only reduces your code size significantly but allows us to freely declare signals without explicitly declaring them (just like Python does compare to C). In addition, we can generate Verilog/SystemVerilog code from TL-Verilog in Makerchip IDE which using Sandpiper complier. Future work involves modifying the current design to implement support for the remaining operations and also implementation of other standard extensions like M, F and D.
 
 # Acknowledgements
 - [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
